@@ -1,0 +1,125 @@
+/* Prompt: Style the body with a green gradient background and center the main game container using Flexbox */
+body {
+    background: linear-gradient(to bottom, #4CAF50, #81C784);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/* Prompt: Create a white container box with rounded corners, padding, and shadow to hold the game */
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 340px;
+
+}
+/* Prompt: Style the game title with bold font, red color, and a black shadow for a fun 3D look */
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: red;
+    text-shadow: 2px 2px 0px black;
+    margin-bottom: 20px;
+}
+/* Prompt: Style score and timer boxes with gradient backgrounds, rounded corners, white bold text, and transition animation */
+.status-box {
+  display: inline-block;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  min-width: 70px;
+  text-align: center;
+  background: linear-gradient(to right, #f77062, #fe5196);
+  transition: all 0.3s ease-in-out;
+}
+/* Prompt: Create a 3x3 grid layout using CSS grid to hold nine circular buttons with spacing */
+.grid {
+   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Mole hole buttons */
+.grid button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #333;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s ease;
+}
+
+/* Prompt: Style the hole buttons to be black, circular with soft shadows to look like holes */
+.hole {
+    background-color: black;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+/* Prompt: Add an active class for the mole button that shows an orange highlight with gradient background */
+.grid button.active {
+  background: radial-gradient(circle at top left, #ffcc80, #ff9800);
+}
+/* Prompt: Style the Start, Reset, and Play Again buttons with different colors, rounded corners, and hover effect */
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+}
+/* Start/Reset/Play Again styles */
+#startBtn {
+  background-color: #00c9a7;
+  color: white;
+}
+#resetBtn {
+  background-color: #ff5252;
+  color: white;
+}
+#playAgainBtn {
+  background-color: #e0e0e0;
+  color: #333;
+  margin-top: 25px;
+}
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Game over text and animation */
+#gameOverMessage {
+  font-size: 1.5em;
+  color: #e53935;
+  margin-top: 15px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#finalScore {
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.grid button {
+  font-size: 2rem; 
+}

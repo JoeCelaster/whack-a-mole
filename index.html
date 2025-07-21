@@ -2,22 +2,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Whack-a-Mole Game</title>
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>Whack-a-Mole</h1>
         <div>
-            <div>Score: <span id="score">0</span></div>
-            <div>Time: <span id="time">30</span>s</div>
+            <div class="status-box">Score: <span id="score">0</span></div>
+            <div class="status-box">Time: <span id="time">30</span>s</div>
         </div>
         <div>
             <button id="startBtn">Start Game</button>
             <button id="resetBtn">Reset</button>
-            <button id="playAgainBtn">Play Again</button>
         </div>
-        <div>
+        <div class="grid">
             <div>
                 <button id="hole0"></button>
                 <button id="hole1"></button>
@@ -34,9 +34,14 @@
                 <button id="hole8"></button>
             </div>
         </div>
+        <div id="gameOverMessage">Game Over!</div>
         <div>
             Final score : <span id="finalScore"></span>
         </div>
+        <button id="playAgainBtn">Play Again</button>
+
+
+
     </div>
     <script src="script.js"></script>
 </body>
