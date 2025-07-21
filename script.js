@@ -45,7 +45,6 @@ window.onload = () => {
             }
         }, 1000);
     }
-
     // Prompt: Handle whack event
     holes.forEach((hole, index) => {
         hole.addEventListener('click', () => {
